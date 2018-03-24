@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animation-iteration-count</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        div {
+            margin:0 auto;
+            width: 100px;
+            height: 100px;
+            background: black;
+            position: relative;
+            animation: move 3s;
+           animation-iteration-count:3;
+
+            /* Safari and Chrome */
+            -webkit-animation: move 3s;
+            -webkit-animation-iteration-count: 3;
+        }
+
+        @keyframes move {
+            from {
+                top: 0px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+
+        @-webkit-keyframes move
+        /* Safari and Chrome */
+
+            {
+            from {
+                top: 0px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>animation-iteration-count 设置动画播放次数</p>
+    <hr>
+    <p>
+        具体次数 (0,1,2,3)  |  infinte 无限播放次数
+    </p>
+    <hr>
+    <div>
+
+    </div>
+</body>
+
+</html>
