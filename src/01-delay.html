@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>animation-delay</title>
+    <title>delay</title>
     <style>
+        p {
+            text-align: center;
+            font-size: 24px;
+        }
+
         div {
+            margin:0 auto;
             width: 100px;
             height: 100px;
             background: black;
@@ -27,7 +33,9 @@
                 top: 200px
             }
         }
+
         /* Safariand Chrome */
+
         @-webkit-keyframes move {
             from {
                 top: 0;
@@ -40,9 +48,9 @@
 </head>
 
 <body>
-    <p>animation-delay 设置元素加载完成动动画开始播放的时间
-    <hr> animation-delay 属性不兼容Internet Explorer 9 以及更早版本的浏览器
-    </p>
+    <p>animation-delay 设置元素加载完成动动画开始播放的时间</p>
+    <hr>
+   
     <div></div>
 </body>
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>duration</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        div {
+            margin:0 auto;
+            width: 100px;
+            height: 100px;
+            background: black;
+            position: relative;
+            animation: move infinite;
+            animation-duration: 2s;
+
+            /* Safari and Chrome */
+            -webkit-animation: move infinite;
+            -webkit-animation-duration: 2s;
+        }
+
+        @keyframes move {
+            from {
+                top: 0px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+
+        @-webkit-keyframes mymove
+        /* Safari and Chrome */
+
+            {
+            from {
+                top: 0px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>duration 设置动画播放时间</p>
+    <hr>
+    <p> animation-duration: time; </p>
+    <div></div>
+</body>
+
+</html>

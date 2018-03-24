@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>direction</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 24px;
+        }
+        div {
+            margin:0 auto;
+            width: 100px;
+            height: 100px;
+            background: black;
+            position: relative;
+            animation: 5s move infinite;
+            animation-direction: alternate;
+            /* Safari 和 Chrome */
+            -webkit-animation: move 5s infinite;
+            -webkit-animation-direction: alternate;
+        }
+        @keyframes move {
+            0%{background: red;left:0;top:0;}
+            25%{background: peru;left:200px;top: 0;}
+            50%{background:olivedrab;left: 200px;top: 200px;}
+            75%{background:mediumturquoise;left: 0;top:200px;}
+            100%{background: mediumblue;left: 0;top:0;}
+        }
+    </style>
+</head>
+
+<body>
+    <p>animation-direction 控制动画播放完成是否反向播放</p>
+    <p> normal默认 |  reverse动画反向播放  | alternate 奇数次反向播放  | alternate-reverse 奇数次正向播放    </p>
+    <hr>
+    <div></div>
+</body>
+
+</html>
