@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>animation-timing-function</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        div {
+            margin: 2px auto;
+            width: 120px;
+            height: 50px;
+            background: black;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            animation: move 6s infinite;
+            -webkit-animation: move 6s infinite;
+            /* Safari and Chrome */
+        }
+
+        #div1 {
+            animation-timing-function: linear;
+        }
+
+        #div2 {
+            animation-timing-function: ease;
+        }
+
+        #div3 {
+            animation-timing-function: ease-in;
+        }
+
+        #div4 {
+            animation-timing-function: ease-out;
+        }
+
+        #div5 {
+            animation-timing-function: ease-in-out;
+        }
+
+        #div6 {
+            animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
+        }
+
+        /* Safari and Chrome: */
+
+        #div1 {
+            -webkit-animation-timing-function: linear;
+        }
+
+        #div2 {
+            -webkit-animation-timing-function: ease;
+        }
+
+        #div3 {
+            -webkit-animation-timing-function: ease-in;
+        }
+
+        #div4 {
+            -webkit-animation-timing-function: ease-out;
+        }
+
+        #div5 {
+            -webkit-animation-timing-function: ease-in-out;
+        }
+
+        #div6 {
+            -webkit-animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
+        }
+
+        @keyframes move {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 500px;
+            }
+        }
+
+        @-webkit-keyframes move
+        /* Safari and Chrome */
+
+            {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 500px;
+            }
+        }
+
+        button {
+            line-height: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>animation-timing-function 设置动画加速效果 </p>
+    <hr>
+    <p>
+        <button id="b1">linear 匀速</button>
+        <button id="b2">ease 低俗开始 加快 结束前变慢</button>
+        <button id="b3">ease-in 低速开始</button>
+        <button id="b4">ease-out 低速结束</button>
+        <button id="b5">ease-in-out 低速开始和结束</button>
+        <button id="b6">cubic-bezier(n,n,n,n) 自定义0-1取值</button>
+    </p>
+
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+    <div id="div6">cubic-bezier(n,n,n,n)</div>
+</body>
+
+</html>

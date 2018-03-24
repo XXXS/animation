@@ -1,0 +1,80 @@
+<html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>animation-play-state</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        div {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background:black;
+            position: relative;
+            animation: move 5s;
+            animation-play-state: paused;
+            animation-iteration-count:10;
+
+            /* Safari and Chrome */
+            -webkit-animation: move 5s;
+            -webkit-animation-play-state: paused;
+            -webkit-animation-iteration-count:10;
+        }
+
+        @keyframes move {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 300px;
+            }
+        }
+
+        @-webkit-keyframes move
+        /* Safari and Chrome */
+
+            {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 300px;
+            }
+        }
+        button{
+            line-height: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>animation-play-state 设置动画暂停 播放</p>
+    <hr>
+    <p>
+       <button id="s1"> running 播放</button>--- <button id="s2">paused 暂停</button>
+    </p>
+    <div></div>
+
+    <script>
+
+   document.querySelector("#s1").onclick = function (){
+    document.querySelector("div").style.animationPlayState="running";
+   }
+
+     document.querySelector("#s2").onclick = function (){
+    document.querySelector("div").style.animationPlayState="paused";
+   }
+
+    </script>
+</body>
+
+</html>
