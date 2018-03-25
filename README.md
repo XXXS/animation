@@ -30,8 +30,7 @@
 -  语法 animation-play-state: paused|running;
 -   object.style.animationPlayState="paused"
 
-##  animation-timing-function 
- ### 设置动画速度 即通过建立加速度曲线 设置动画在关键帧之间是如何变化
+##  animation-timing-function  设置动画加速度
  - linear 动画从头到尾的速度是相同的
  - linear	动画从头到尾的速度是相同的。	
  - ease	默认。动画以低速开始，然后加快，在结束前变慢
@@ -45,4 +44,9 @@
  - forwards	在动画结束后（由 animation-iteration-count 决定），动画将应用该属性值。
  - backwards	动画将应用在 animation-delay 定义期间启动动画的第一次迭代的关键帧中定义的属性值。这些都是 from 关键帧中的值（当 animation-direction 为 "normal" 或 "alternate" 时）或 to 关键帧中的值（当 animation-direction 为 "reverse" 或 "alternate-reverse" 时）。
  - both	动画遵循 forwards 和 backwards 的规则。也就是说，动画会在两个方向上扩展动画属性。
+
+ # 动画事件 
+ 动画开始播放事件  animationstart 
+ 动画播放结束事件   animationend
+ 动画重新开始播放事件   animationiteration
   
