@@ -46,7 +46,7 @@
  - both	动画遵循 forwards 和 backwards 的规则。也就是说，动画会在两个方向上扩展动画属性。
 
  # 动画事件 
- 动画开始播放事件  animationstart 
- 动画播放结束事件   animationend
- 动画重新开始播放事件   animationiteration
+  - 动画开始播放事件  animationstart 
+  - 动画播放结束事件   animationend
+  - 动画重新开始播放事件   animationiteration
   
